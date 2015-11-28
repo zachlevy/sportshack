@@ -11,10 +11,45 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151128185219) do
+ActiveRecord::Schema.define(version: 20151128194750) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "games", force: :cascade do |t|
+    t.integer  "sked_id"
+    t.string   "week_name"
+    t.string   "week_short"
+    t.integer  "week_id"
+    t.string   "game_num"
+    t.datetime "game_date"
+    t.integer  "date_tbd"
+    t.integer  "time_tbd"
+    t.string   "game_status"
+    t.string   "away_team"
+    t.string   "away_initial"
+    t.integer  "away_score1"
+    t.integer  "away_score2"
+    t.integer  "away_score3"
+    t.integer  "away_score4"
+    t.integer  "away_scoreOT"
+    t.integer  "away_id"
+    t.string   "home_team"
+    t.string   "home_initial"
+    t.integer  "home_score1"
+    t.integer  "home_score2"
+    t.integer  "home_score3"
+    t.integer  "home_score4"
+    t.integer  "home_scoreOT"
+    t.integer  "home_id"
+    t.integer  "attendance"
+    t.integer  "sold_out"
+    t.integer  "is_visible"
+    t.string   "culture"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.integer  "cfl_game_id"
+  end
 
   create_table "plays", force: :cascade do |t|
     t.integer  "game_id"

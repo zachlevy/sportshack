@@ -1,0 +1,93 @@
+%p#notice= notice
+
+%p
+  %b Sked:
+  = @game.sked_id
+%p
+  %b Week name:
+  = @game.week_name
+%p
+  %b Week short:
+  = @game.week_short
+%p
+  %b Week:
+  = @game.week_id
+%p
+  %b Game num:
+  = @game.game_num
+%p
+  %b Game date:
+  = @game.game_date
+%p
+  %b Date tbd:
+  = @game.date_tbd
+%p
+  %b Time tbd:
+  = @game.time_tbd
+%p
+  %b Game status:
+  = @game.game_status
+%p
+  %b Away team:
+  = @game.away_team
+%p
+  %b Away initial:
+  = @game.away_initial
+%p
+  %b Away score1:
+  = @game.away_score1
+%p
+  %b Away score2:
+  = @game.away_score2
+%p
+  %b Away score3:
+  = @game.away_score3
+%p
+  %b Away score4:
+  = @game.away_score4
+%p
+  %b Away scoreot:
+  = @game.away_scoreOT
+%p
+  %b Away:
+  = @game.away_id
+%p
+  %b Home team:
+  = @game.home_team
+%p
+  %b Home initial:
+  = @game.home_initial
+%p
+  %b Home score1:
+  = @game.home_score1
+%p
+  %b Home score2:
+  = @game.home_score2
+%p
+  %b Home score3:
+  = @game.home_score3
+%p
+  %b Home score4:
+  = @game.home_score4
+%p
+  %b Home scoreot:
+  = @game.home_scoreOT
+%p
+  %b Home:
+  = @game.home_id
+%p
+  %b Attendance:
+  = @game.attendance
+%p
+  %b Sold out:
+  = @game.sold_out
+%p
+  %b Is visible:
+  = @game.is_visible
+%p
+  %b Culture:
+  = @game.culture
+
+= link_to 'Edit', edit_game_path(@game)
+\|
+= link_to 'Back', games_path

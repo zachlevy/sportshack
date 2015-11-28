@@ -1,0 +1,63 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sked_id: 1
+  week_name: MyString
+  week_short: MyString
+  week_id: 1
+  game_num: MyString
+  game_date: 2015-11-28 14:38:04
+  date_tbd: 1
+  time_tbd: 1
+  game_status: MyString
+  away_team: MyString
+  away_initial: MyString
+  away_score1: 1
+  away_score2: 1
+  away_score3: 1
+  away_score4: 1
+  away_scoreOT: 1
+  away_id: 1
+  home_team: MyString
+  home_initial: MyString
+  home_score1: 1
+  home_score2: 1
+  home_score3: 1
+  home_score4: 1
+  home_scoreOT: 1
+  home_id: 1
+  attendance: 1
+  sold_out: 1
+  is_visible: 1
+  culture: MyString
+
+two:
+  sked_id: 1
+  week_name: MyString
+  week_short: MyString
+  week_id: 1
+  game_num: MyString
+  game_date: 2015-11-28 14:38:04
+  date_tbd: 1
+  time_tbd: 1
+  game_status: MyString
+  away_team: MyString
+  away_initial: MyString
+  away_score1: 1
+  away_score2: 1
+  away_score3: 1
+  away_score4: 1
+  away_scoreOT: 1
+  away_id: 1
+  home_team: MyString
+  home_initial: MyString
+  home_score1: 1
+  home_score2: 1
+  home_score3: 1
+  home_score4: 1
+  home_scoreOT: 1
+  home_id: 1
+  attendance: 1
+  sold_out: 1
+  is_visible: 1
+  culture: MyString

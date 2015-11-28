@@ -1,0 +1,77 @@
+%h1 Listing games
+
+%table
+  %thead
+    %tr
+      %th Sked
+      %th Week name
+      %th Week short
+      %th Week
+      %th Game num
+      %th Game date
+      %th Date tbd
+      %th Time tbd
+      %th Game status
+      %th Away team
+      %th Away initial
+      %th Away score1
+      %th Away score2
+      %th Away score3
+      %th Away score4
+      %th Away scoreot
+      %th Away
+      %th Home team
+      %th Home initial
+      %th Home score1
+      %th Home score2
+      %th Home score3
+      %th Home score4
+      %th Home scoreot
+      %th Home
+      %th Attendance
+      %th Sold out
+      %th Is visible
+      %th Culture
+      %th
+      %th
+      %th
+
+  %tbody
+    - @games.each do |game|
+      %tr
+        %td= game.sked_id
+        %td= game.week_name
+        %td= game.week_short
+        %td= game.week_id
+        %td= game.game_num
+        %td= game.game_date
+        %td= game.date_tbd
+        %td= game.time_tbd
+        %td= game.game_status
+        %td= game.away_team
+        %td= game.away_initial
+        %td= game.away_score1
+        %td= game.away_score2
+        %td= game.away_score3
+        %td= game.away_score4
+        %td= game.away_scoreOT
+        %td= game.away_id
+        %td= game.home_team
+        %td= game.home_initial
+        %td= game.home_score1
+        %td= game.home_score2
+        %td= game.home_score3
+        %td= game.home_score4
+        %td= game.home_scoreOT
+        %td= game.home_id
+        %td= game.attendance
+        %td= game.sold_out
+        %td= game.is_visible
+        %td= game.culture
+        %td= link_to 'Show', game
+        %td= link_to 'Edit', edit_game_path(game)
+        %td= link_to 'Destroy', game, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Game', new_game_path

@@ -1,0 +1,97 @@
+= form_for @game do |f|
+  - if @game.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@game.errors.count, "error")} prohibited this game from being saved:"
+      %ul
+        - @game.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :sked_id
+    = f.number_field :sked_id
+  .field
+    = f.label :week_name
+    = f.text_field :week_name
+  .field
+    = f.label :week_short
+    = f.text_field :week_short
+  .field
+    = f.label :week_id
+    = f.number_field :week_id
+  .field
+    = f.label :game_num
+    = f.text_field :game_num
+  .field
+    = f.label :game_date
+    = f.datetime_select :game_date
+  .field
+    = f.label :date_tbd
+    = f.number_field :date_tbd
+  .field
+    = f.label :time_tbd
+    = f.number_field :time_tbd
+  .field
+    = f.label :game_status
+    = f.text_field :game_status
+  .field
+    = f.label :away_team
+    = f.text_field :away_team
+  .field
+    = f.label :away_initial
+    = f.text_field :away_initial
+  .field
+    = f.label :away_score1
+    = f.number_field :away_score1
+  .field
+    = f.label :away_score2
+    = f.number_field :away_score2
+  .field
+    = f.label :away_score3
+    = f.number_field :away_score3
+  .field
+    = f.label :away_score4
+    = f.number_field :away_score4
+  .field
+    = f.label :away_scoreOT
+    = f.number_field :away_scoreOT
+  .field
+    = f.label :away_id
+    = f.number_field :away_id
+  .field
+    = f.label :home_team
+    = f.text_field :home_team
+  .field
+    = f.label :home_initial
+    = f.text_field :home_initial
+  .field
+    = f.label :home_score1
+    = f.number_field :home_score1
+  .field
+    = f.label :home_score2
+    = f.number_field :home_score2
+  .field
+    = f.label :home_score3
+    = f.number_field :home_score3
+  .field
+    = f.label :home_score4
+    = f.number_field :home_score4
+  .field
+    = f.label :home_scoreOT
+    = f.number_field :home_scoreOT
+  .field
+    = f.label :home_id
+    = f.number_field :home_id
+  .field
+    = f.label :attendance
+    = f.number_field :attendance
+  .field
+    = f.label :sold_out
+    = f.number_field :sold_out
+  .field
+    = f.label :is_visible
+    = f.number_field :is_visible
+  .field
+    = f.label :culture
+    = f.text_field :culture
+  .actions
+    = f.submit 'Save'
