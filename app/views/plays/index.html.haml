@@ -1,0 +1,71 @@
+%h1 Listing plays
+
+%table
+  %thead
+    %tr
+      %th Game
+      %th Play
+      %th Quarter
+      %th Time
+      %th Down
+      %th Distance
+      %th Away score before
+      %th Away score after
+      %th Home score before
+      %th Home score after
+      %th Yardline
+      %th End yardline
+      %th End possession
+      %th Continuation
+      %th Play type
+      %th Player1
+      %th Player2
+      %th Player3
+      %th Tackle1
+      %th Direction
+      %th Yards
+      %th Review
+      %th Review team
+      %th Penalty
+      %th Details
+      %th Name
+      %th
+      %th
+      %th
+
+  %tbody
+    - @plays.each do |play|
+      %tr
+        %td= play.game_id
+        %td= play.play_id
+        %td= play.quarter
+        %td= play.time
+        %td= play.down
+        %td= play.distance
+        %td= play.away_score_before
+        %td= play.away_score_after
+        %td= play.home_score_before
+        %td= play.home_score_after
+        %td= play.yardline
+        %td= play.end_yardline
+        %td= play.end_possession_id
+        %td= play.continuation
+        %td= play.play_type_id
+        %td= play.player1_id
+        %td= play.player2_id
+        %td= play.player3_id
+        %td= play.tackle1_id
+        %td= play.direction
+        %td= play.yards
+        %td= play.review
+        %td= play.review_team_id
+        %td= play.penalty_id
+        %td= play.details
+        %td= play.name
+        %td= link_to 'Show', play
+        %td= link_to 'Edit', edit_play_path(play)
+        %td= link_to 'Destroy', play, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Play', new_play_path

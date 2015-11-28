@@ -1,0 +1,51 @@
+%h1 Listing rosters
+
+%table
+  %thead
+    %tr
+      %th Stats inc
+      %th Team
+      %th Playerstats
+      %th First
+      %th Last
+      %th Num
+      %th Pos
+      %th Import status
+      %th Height
+      %th Weight
+      %th Birthdate
+      %th Birthplace
+      %th College
+      %th Yrsteam
+      %th Yrsleague
+      %th Ros status
+      %th
+      %th
+      %th
+
+  %tbody
+    - @rosters.each do |roster|
+      %tr
+        %td= roster.stats_inc_id
+        %td= roster.team_id
+        %td= roster.playerstats_id
+        %td= roster.first
+        %td= roster.last
+        %td= roster.num
+        %td= roster.pos
+        %td= roster.import_status
+        %td= roster.height
+        %td= roster.weight
+        %td= roster.birthdate
+        %td= roster.birthplace
+        %td= roster.college
+        %td= roster.yrsteam
+        %td= roster.yrsleague
+        %td= roster.ros_status
+        %td= link_to 'Show', roster
+        %td= link_to 'Edit', edit_roster_path(roster)
+        %td= link_to 'Destroy', roster, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Roster', new_roster_path

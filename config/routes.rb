@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :plays
+  resources :rosters
   resources :teams
   root to: "teams#index"
   # The priority is based upon order of creation: first created -> highest priority.

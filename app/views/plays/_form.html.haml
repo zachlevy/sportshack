@@ -1,0 +1,88 @@
+= form_for @play do |f|
+  - if @play.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@play.errors.count, "error")} prohibited this play from being saved:"
+      %ul
+        - @play.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :game_id
+    = f.number_field :game_id
+  .field
+    = f.label :play_id
+    = f.number_field :play_id
+  .field
+    = f.label :quarter
+    = f.number_field :quarter
+  .field
+    = f.label :time
+    = f.text_field :time
+  .field
+    = f.label :down
+    = f.number_field :down
+  .field
+    = f.label :distance
+    = f.number_field :distance
+  .field
+    = f.label :away_score_before
+    = f.number_field :away_score_before
+  .field
+    = f.label :away_score_after
+    = f.number_field :away_score_after
+  .field
+    = f.label :home_score_before
+    = f.number_field :home_score_before
+  .field
+    = f.label :home_score_after
+    = f.number_field :home_score_after
+  .field
+    = f.label :yardline
+    = f.text_field :yardline
+  .field
+    = f.label :end_yardline
+    = f.text_field :end_yardline
+  .field
+    = f.label :end_possession_id
+    = f.number_field :end_possession_id
+  .field
+    = f.label :continuation
+    = f.number_field :continuation
+  .field
+    = f.label :play_type_id
+    = f.number_field :play_type_id
+  .field
+    = f.label :player1_id
+    = f.number_field :player1_id
+  .field
+    = f.label :player2_id
+    = f.number_field :player2_id
+  .field
+    = f.label :player3_id
+    = f.number_field :player3_id
+  .field
+    = f.label :tackle1_id
+    = f.number_field :tackle1_id
+  .field
+    = f.label :direction
+    = f.text_field :direction
+  .field
+    = f.label :yards
+    = f.number_field :yards
+  .field
+    = f.label :review
+    = f.number_field :review
+  .field
+    = f.label :review_team_id
+    = f.number_field :review_team_id
+  .field
+    = f.label :penalty_id
+    = f.number_field :penalty_id
+  .field
+    = f.label :details
+    = f.text_field :details
+  .field
+    = f.label :name
+    = f.text_field :name
+  .actions
+    = f.submit 'Save'

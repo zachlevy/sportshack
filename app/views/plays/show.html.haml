@@ -1,0 +1,84 @@
+%p#notice= notice
+
+%p
+  %b Game:
+  = @play.game_id
+%p
+  %b Play:
+  = @play.play_id
+%p
+  %b Quarter:
+  = @play.quarter
+%p
+  %b Time:
+  = @play.time
+%p
+  %b Down:
+  = @play.down
+%p
+  %b Distance:
+  = @play.distance
+%p
+  %b Away score before:
+  = @play.away_score_before
+%p
+  %b Away score after:
+  = @play.away_score_after
+%p
+  %b Home score before:
+  = @play.home_score_before
+%p
+  %b Home score after:
+  = @play.home_score_after
+%p
+  %b Yardline:
+  = @play.yardline
+%p
+  %b End yardline:
+  = @play.end_yardline
+%p
+  %b End possession:
+  = @play.end_possession_id
+%p
+  %b Continuation:
+  = @play.continuation
+%p
+  %b Play type:
+  = @play.play_type_id
+%p
+  %b Player1:
+  = @play.player1_id
+%p
+  %b Player2:
+  = @play.player2_id
+%p
+  %b Player3:
+  = @play.player3_id
+%p
+  %b Tackle1:
+  = @play.tackle1_id
+%p
+  %b Direction:
+  = @play.direction
+%p
+  %b Yards:
+  = @play.yards
+%p
+  %b Review:
+  = @play.review
+%p
+  %b Review team:
+  = @play.review_team_id
+%p
+  %b Penalty:
+  = @play.penalty_id
+%p
+  %b Details:
+  = @play.details
+%p
+  %b Name:
+  = @play.name
+
+= link_to 'Edit', edit_play_path(@play)
+\|
+= link_to 'Back', plays_path

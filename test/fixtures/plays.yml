@@ -1,0 +1,57 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  game_id: 1
+  play_id: 1
+  quarter: 1
+  time: MyString
+  down: 1
+  distance: 1
+  away_score_before: 1
+  away_score_after: 1
+  home_score_before: 1
+  home_score_after: 1
+  yardline: MyString
+  end_yardline: MyString
+  end_possession_id: 1
+  continuation: 1
+  play_type_id: 1
+  player1_id: 1
+  player2_id: 1
+  player3_id: 1
+  tackle1_id: 1
+  direction: MyString
+  yards: 1
+  review: 1
+  review_team_id: 1
+  penalty_id: 1
+  details: MyString
+  name: MyString
+
+two:
+  game_id: 1
+  play_id: 1
+  quarter: 1
+  time: MyString
+  down: 1
+  distance: 1
+  away_score_before: 1
+  away_score_after: 1
+  home_score_before: 1
+  home_score_after: 1
+  yardline: MyString
+  end_yardline: MyString
+  end_possession_id: 1
+  continuation: 1
+  play_type_id: 1
+  player1_id: 1
+  player2_id: 1
+  player3_id: 1
+  tackle1_id: 1
+  direction: MyString
+  yards: 1
+  review: 1
+  review_team_id: 1
+  penalty_id: 1
+  details: MyString
+  name: MyString

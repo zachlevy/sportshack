@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  stats_inc_id: 1
+  team_id: 1
+  playerstats_id: 1
+  first: MyString
+  last: MyString
+  num: 1
+  pos: 1
+  import_status: 1
+  height: MyString
+  weight: MyString
+  birthdate: 2015-11-28
+  birthplace: MyString
+  college: MyString
+  yrsteam: 1
+  yrsleague: 1
+  ros_status: 1
+
+two:
+  stats_inc_id: 1
+  team_id: 1
+  playerstats_id: 1
+  first: MyString
+  last: MyString
+  num: 1
+  pos: 1
+  import_status: 1
+  height: MyString
+  weight: MyString
+  birthdate: 2015-11-28
+  birthplace: MyString
+  college: MyString
+  yrsteam: 1
+  yrsleague: 1
+  ros_status: 1

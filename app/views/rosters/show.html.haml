@@ -1,0 +1,54 @@
+%p#notice= notice
+
+%p
+  %b Stats inc:
+  = @roster.stats_inc_id
+%p
+  %b Team:
+  = @roster.team_id
+%p
+  %b Playerstats:
+  = @roster.playerstats_id
+%p
+  %b First:
+  = @roster.first
+%p
+  %b Last:
+  = @roster.last
+%p
+  %b Num:
+  = @roster.num
+%p
+  %b Pos:
+  = @roster.pos
+%p
+  %b Import status:
+  = @roster.import_status
+%p
+  %b Height:
+  = @roster.height
+%p
+  %b Weight:
+  = @roster.weight
+%p
+  %b Birthdate:
+  = @roster.birthdate
+%p
+  %b Birthplace:
+  = @roster.birthplace
+%p
+  %b College:
+  = @roster.college
+%p
+  %b Yrsteam:
+  = @roster.yrsteam
+%p
+  %b Yrsleague:
+  = @roster.yrsleague
+%p
+  %b Ros status:
+  = @roster.ros_status
+
+= link_to 'Edit', edit_roster_path(@roster)
+\|
+= link_to 'Back', rosters_path

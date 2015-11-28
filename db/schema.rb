@@ -11,10 +11,62 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151128180134) do
+ActiveRecord::Schema.define(version: 20151128185219) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "plays", force: :cascade do |t|
+    t.integer  "game_id"
+    t.integer  "cfl_play_id"
+    t.integer  "quarter"
+    t.string   "time"
+    t.integer  "down"
+    t.integer  "distance"
+    t.integer  "away_score_before"
+    t.integer  "away_score_after"
+    t.integer  "home_score_before"
+    t.integer  "home_score_after"
+    t.string   "yardline"
+    t.string   "end_yardline"
+    t.integer  "end_possession_id"
+    t.integer  "continuation"
+    t.integer  "play_type_id"
+    t.integer  "player1_id"
+    t.integer  "player2_id"
+    t.integer  "player3_id"
+    t.integer  "tackle1_id"
+    t.string   "direction"
+    t.integer  "yards"
+    t.integer  "review"
+    t.integer  "review_team_id"
+    t.integer  "penalty_id"
+    t.string   "details"
+    t.string   "name"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+  end
+
+  create_table "rosters", force: :cascade do |t|
+    t.integer  "stats_inc_id"
+    t.integer  "team_id"
+    t.integer  "playerstats_id"
+    t.string   "first"
+    t.string   "last"
+    t.integer  "num"
+    t.integer  "pos"
+    t.integer  "import_status"
+    t.string   "height"
+    t.string   "weight"
+    t.date     "birthdate"
+    t.string   "birthplace"
+    t.string   "college"
+    t.integer  "yrsteam"
+    t.integer  "yrsleague"
+    t.integer  "ros_status"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
 
   create_table "teams", force: :cascade do |t|
     t.string   "name"
