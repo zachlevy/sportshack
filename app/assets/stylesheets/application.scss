@@ -10,6 +10,23 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
  */
+
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+//Import bootstrap-sprockets
+@import "bootstrap-sprockets";
+// Import cerulean variables
+@import "bootswatch/yeti/variables";
+// Then bootstrap itself
+@import "bootstrap";
+// Bootstrap body padding for fixed navbar
+body { padding-top: 60px; }
+// And finally bootswatch style itself
+@import "bootswatch/yeti/bootswatch";
+
+body {
+  background-color: #AF2E2E;
+  .container {
+    
+  }
+}
