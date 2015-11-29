@@ -1,0 +1,31 @@
+%h1 Listing rivalries
+
+= render 'rivalry'
+
+= render 'spike'
+
+%table
+  %thead
+    %tr
+      %th Away team
+      %th Home team
+      %th Away player
+      %th Home player
+      %th
+      %th
+      %th
+
+  %tbody
+    - @rivalries.each do |rivalry|
+      %tr
+        %td= rivalry.away_team
+        %td= rivalry.home_team
+        %td= rivalry.away_player
+        %td= rivalry.home_player
+        %td= link_to 'Show', rivalry
+        %td= link_to 'Edit', edit_rivalry_path(rivalry)
+        %td= link_to 'Destroy', rivalry, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Rivalry', new_rivalry_path

@@ -5,6 +5,18 @@ class TeamsController < ApplicationController
   # GET /teams.json
   def index
     @teams = Team.all
+
+    client = Twitter::REST::Client.new do |config|
+      config.consumer_key        = "aaSbvLMONm08O8HaABw2YQHmh"
+      config.consumer_secret     = "GLE2Fvdh1HKOM0icw0ZHenLPqcH2foNQVXUYSh6YxI0TkqEHmJ"
+      config.access_token        = "1020706052-ZIDyUQhTGKd92g6rWi8MSAeMd87YaViWjjG7XjZ"
+      config.access_token_secret = "ftZt4nQE94aKviErU6A2NH9zJHZ6YQFfOVCtZS3qNtzce"
+    end
+
+    @tweets = client.search("touchdown #ticats -rt", {since: "2015-11-22", until: "2015-11-23"})
+
+    # touchdown+Ticat
+    # since 2015-07-19
   end
 
   # GET /teams/1

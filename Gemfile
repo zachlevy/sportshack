@@ -18,6 +18,10 @@ gem 'seed_dump'
 gem "haml-rails", "~> 0.9"
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'bootswatch-rails'
+gem 'twitter'
+gem 'groupdate'
+gem 'shareable'
+gem 'chart-js-rails'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

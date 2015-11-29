@@ -13,4 +13,21 @@
 #= require jquery
 #= require jquery_ujs
 #= require bootstrap-sprockets
+#= require Chart
 #= require_tree .
+
+jQuery ->
+  data = {
+    labels : ["January","February","March","April","May","June","July"],
+    datasets : [
+      {
+        fillColor : "#007196",
+        strokeColor : "rgba(220,220,220,1)",
+        pointColor : "rgba(220,220,220,1)",
+        pointStrokeColor : "#fff",
+        data : [65,59,90,81,56,55,40]
+      }
+    ]
+  }
+
+  myNewChart = new Chart($("#canvas").get(0).getContext("2d")).Bar(data)

@@ -25,8 +25,80 @@ body { padding-top: 60px; }
 @import "bootswatch/yeti/bootswatch";
 
 body {
-  background-color: #AF2E2E;
+  // background-color: #AF2E2E;
+  background-color: #f0f0f0;
   .container {
-    
+
+  }
+  color: gray;
+}
+.rivalry {
+
+  background: white;
+  border: 1px solid #f0f0f0;
+  border-radius: 5px;
+  padding: 1em 1em;
+
+  .home-away-wrap {
+    position: relative;
+  }
+  .home-team, .away-team {
+
+  }
+  .home-team {
+
+  }
+  .away-player-wrap {
+    padding-left: 0;
+  }
+  .home-player-wrap {
+    padding-right:0;
+  }
+  .away-team {
+
+  }
+  .home-player, .away-player {
+    height: 400px;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .home-player {
+
+  }
+  .away-player {
+    float: right;
+  }
+  .bull-wrap {
+    position: absolute;
+    top: 500px;
+    z-index: 1000;
+  }
+  .splash-wrap {
+    position: absolute;
+    bottom: 0;
+    z-index: 1000;
   }
 }
+.info {
+  padding: 0 1em;
+}
+
+// SOCIAL SHARE START
+.social-share {
+  // bugfix
+  .facebook {
+    .fb-like {
+      position: absolute;
+      top: -1px;
+    }
+  }
+  .twitter {
+
+  }
+  .linkedin {
+
+  }
+}
+// SOCIAL SHARE END

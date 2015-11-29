@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Away team:
+  = @rivalry.away_team
+%p
+  %b Home team:
+  = @rivalry.home_team
+%p
+  %b Away player:
+  = @rivalry.away_player
+%p
+  %b Home player:
+  = @rivalry.home_player
+
+= link_to 'Edit', edit_rivalry_path(@rivalry)
+\|
+= link_to 'Back', rivalries_path
